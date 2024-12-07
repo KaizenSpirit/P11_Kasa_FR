@@ -1,9 +1,12 @@
 import React from "react";
-
+import Banner from "../components/Banner"
 const Home = () => {
   return (
     <div>
-      <h1>Ceci est la page d'accueil.</h1>
+         <Banner 
+        text="Chez vous, partout et ailleurs" 
+        image="/img/ImageAcceuil.png" 
+      />
     </div>
   );
 };
