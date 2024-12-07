@@ -3,7 +3,7 @@ import Banner from "../components/Banner"
 const Home = () => {
   return (
     <div>
-         <Banner 
+        <Banner 
         text="Chez vous, partout et ailleurs" 
         image="/img/ImageAcceuil.png" 
       />
