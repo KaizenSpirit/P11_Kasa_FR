@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/Banner";
-import Accordion from "../components/Accordion";
+import Banner from "../components/Banner/Banner.js";
+import Accordion from "../components/Accordion/Accordion.js";
 import { aboutAccordionData } from "../constants/constants";
 const About = () => {
   return (
