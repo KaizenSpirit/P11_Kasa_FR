@@ -1,4 +1,61 @@
-header{
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: clamp(10px, 5vw, 30px) clamp(20px, 6vw, 80px);
+  height: 68px;
+
+  img {
+    max-height: clamp(40px, 5vw, 68px);
+    transition: max-height 0.3s ease;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-family: "Montserrat";
+      font-size: clamp(12px, 2vw, 24px);
+      transition: color 0.3s ease;
+      margin-right: 20px;
+
+      &:hover {
+        color: #ff6347;
+      }
+
+      &.active-link {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    nav a {
+      text-transform: uppercase; 
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
