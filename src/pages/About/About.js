@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../components/Banner/Banner.js";
-import Accordion from "../components/Accordion/Accordion.js";
-import { aboutAccordionData } from "../constants/constants";
+import Banner from "../../components/Banner/Banner.js";
+import Accordion from "../../components/Accordion/Accordion.js";
+import { aboutAccordionData } from "../../constants/constants.js";
 const About = () => {
   return (
     <div>

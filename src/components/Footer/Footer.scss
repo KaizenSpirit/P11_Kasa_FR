@@ -1,4 +1,37 @@
-.footer{
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #000;
-  color: white;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 150px;
+
+  img {
+    height: 39px;
+    margin: 30px;
+    transition: height 0.3s ease; // Animation pour une transition fluide
+  }
+
+  p {
+    font-size: clamp(12px, 2vw, 24px); // Taille du texte responsive
+    margin: 0;
+    transition: font-size 0.3s ease; // Animation pour une transition fluide
+  }
+
+  // Media Queries pour petits écrans
+  @media screen and (max-width: 375px) {
+    height: 100px;
+
+    img {
+      height: 30px; // Réduction de la hauteur de l'image
+    }
+
+    p {
+      font-size: 12px; // Texte plus petit pour les petits écrans
+    }
+  }
 }
