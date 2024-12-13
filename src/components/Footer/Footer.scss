@@ -13,25 +13,27 @@ footer {
   img {
     height: 39px;
     margin: 30px;
-    transition: height 0.3s ease; // Animation pour une transition fluide
+    transition: height 0.3s ease; 
   }
 
   p {
-    font-size: clamp(12px, 2vw, 24px); // Taille du texte responsive
+    font-size: clamp(12px, 2vw, 24px); 
     margin: 0;
-    transition: font-size 0.3s ease; // Animation pour une transition fluide
+    transition: font-size 0.3s ease; 
   }
 
-  // Media Queries pour petits écrans
   @media screen and (max-width: 375px) {
     height: 100px;
 
     img {
-      height: 30px; // Réduction de la hauteur de l'image
+      height: 30px; 
     }
 
     p {
-      font-size: 12px; // Texte plus petit pour les petits écrans
+      font-size: 12px;
     }
   }
 }
+
+
+

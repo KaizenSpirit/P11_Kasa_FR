@@ -11,17 +11,15 @@ const Accordion = ({ title, content }) => {
 
   return (
     <div className="accordion">
-      <div className="accordion-header" onClick={toggleAccordion}>
+      <div className="accordion-header">
         <h3>{title}</h3>
-        <span>
-          {isOpen ? (
-            <img src="./img/arrow_up.png" alt="Flèche vers le haut" />
-          ) : (
-            <img src="./img/arrow_down.png" alt="Flèche vers le bas" />
-          )}
+        <span onClick={toggleAccordion} className={`arrow ${isOpen ? "rotated" : ""}`}>
+            <img src="./img/arrow_down.png" alt="Flèche" />
         </span>
       </div>
-      {isOpen && <div className="accordion-content">{content}</div>}
+      <div className={`accordion-content ${isOpen ? "open" : ""}`}>
+      <p>{content}</p>
+    </div>
     </div>
   );
 };

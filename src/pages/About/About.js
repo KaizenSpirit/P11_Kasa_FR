@@ -6,9 +6,9 @@ const About = () => {
   return (
     <div>
       <Banner text="" image="/img/imageAbout.png"/>
-      {
-      aboutAccordionData.map((item, index) => (<Accordion key={index} title={item.title} content={item.content} />))
-      }
+      <div className="accordion-container">
+          {aboutAccordionData.map((item, index) => (<Accordion key={index} title={item.title} content={item.content} />))}
+      </div>
     </div>
   );
 };
