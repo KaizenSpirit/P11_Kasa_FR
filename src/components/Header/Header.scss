@@ -3,12 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  margin: clamp(10px, 5vw, 30px) clamp(20px, 6vw, 80px);
+  margin: clamp(10px, 5vw, 30px) clamp(20px, 6vw, 90px);
   height: 68px;
 
   img {
     max-height: clamp(40px, 5vw, 68px);
-    transition: max-height 0.3s ease;
   }
 
   nav {
