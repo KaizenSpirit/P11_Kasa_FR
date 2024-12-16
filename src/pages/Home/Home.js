@@ -18,17 +18,18 @@ const Home = () => {
 
   return (
     <div>
-      {!selectedAccommodation &&
+    {!selectedAccommodation ? (
+      <>
         <Banner 
-        text="Chez vous, partout et ailleurs" 
-        image="/img/ImageAcceuil.png" 
-      />}
-            {!selectedAccommodation ? (
+          text="Chez vous, partout et ailleurs" 
+          image="/img/ImageAcceuil.png" 
+        />
         <CardGridLayout onSelectAccommodation={handleSelectAccommodation} />
-      ) : (
-        <CardDetailsContainer accommodation={selectedAccommodation} />
-      )}
-    </div>
+      </>
+    ) : (
+      <CardDetailsContainer accommodation={selectedAccommodation} />
+    )}
+  </div>
 
   );
 };
