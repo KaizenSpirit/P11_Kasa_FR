@@ -1,10 +1,12 @@
 import React from "react";
 import "../../styles/Main.scss";
 
-const CardDetailsContainer = () => {
+const CardDetailsContainer = ({accommodation}) => {
   return (
     <div className="container-card-details">
-      <h1>Card details component</h1>
+      <h1>{accommodation.title}</h1>
+      <img src={accommodation.cover} alt={accommodation.title} />
+      <p>{accommodation.description}</p>
     </div>
   );
 };

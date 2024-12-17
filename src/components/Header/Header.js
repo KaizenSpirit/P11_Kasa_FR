@@ -6,7 +6,7 @@ const Header = () => {
   const location = useLocation()
   return (
     <header className="header">
-      <img src='./img/LOGO.png' alt='Logo du site'></img>
+      <img src={`${process.env.PUBLIC_URL}/img/LOGO.png`} alt='Logo du site'></img>
       <nav>
         <Link to="/" className={location.pathname === "/" ? "active-link" : "" }>Accueil</Link>
         <Link to="/about" className={location.pathname ==="/about" ? "active-link" : "" }>À Propos</Link>
