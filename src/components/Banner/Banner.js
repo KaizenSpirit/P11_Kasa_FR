@@ -24,7 +24,7 @@ const Banner = ({ text, image, pictures }) => {
         <img
           src={hasPictures ? pictures[currentIndex] : image} // Carousel ou image unique
           alt={`Slide ${currentIndex + 1}`}
-          className="carousel-image"
+          className={`carousel-image ${!hasPictures ? "banner-static-image" : ""}`}
         />
     
         {hasMultiplePictures && (

@@ -1,3 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; // Assure que le body et html prennent toute la hauteur de l'écran
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // S'assure que le wrapper occupe toute la hauteur de la fenêtre
+}
+
+main {
+  flex: 1; // Le contenu occupe l'espace restant
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -22,8 +38,13 @@ footer {
     transition: font-size 0.3s ease; 
   }
 
+  @media screen and (max-width: 760px) {
+      height: 180px; // Définition de la hauteur du footer
+
+  }
+
   @media screen and (max-width: 375px) {
-    height: 100px;
+    height: 180px;
 
     img {
       height: 30px; 
