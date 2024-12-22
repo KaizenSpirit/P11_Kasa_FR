@@ -1,0 +1,112 @@
+.section-details {
+  .accordion-container{
+    display: block;
+  }
+  .accordion-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 100%; 
+  }
+
+  .accordion {
+    width: 100%;
+    margin: 0; 
+    overflow: hidden; 
+    position: relative;
+    border-radius: 5px;
+    transition: all 2s ease;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #FF6060;
+      height: 52px;
+      border-radius: 5px;
+
+      h3 {
+        font-size: 24px;
+        color: white;
+        margin-left: 5px;
+        font-family: "Montserrat";
+      }
+
+      .arrow {
+        img {
+          width: 34px;
+          height: 34px;
+          transition: transform 0.5s; 
+          cursor: pointer;
+          margin: 10px 20px 0px 0px;
+        }
+
+        &.rotated img {
+          transform: rotate(180deg); 
+        }
+      }
+    }
+
+    &-content {
+      max-height: 0px; /* Collapses fermés par défaut */
+      overflow: hidden;
+      transition: max-height 0.5s ease; 
+      background-color: #F6F6F6;
+      font-size: 18px;
+      padding: 0 15px;
+      font-family: "Montserrat";
+      width: 100%; 
+      
+      ul {
+        list-style-type: none; 
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-family: "Montserrat";
+          font-size: 18px; 
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &.open &-content {
+      max-height: 500px; /* Ouverture fluide */
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .accordion-container {
+      flex-direction: column; 
+      gap: 15px;
+    }
+
+    .accordion {
+      width: 100%; 
+    }
+
+    .accordion-header {
+      height: 20px;
+      h3 {
+        font-size: 13px;
+      }
+
+      .arrow img {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+      }
+    }
+
+    .accordion-content {
+      max-height: 0px; /* Hauteur fermée par défaut */
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
+
+    .accordion.open .accordion-content {
+      max-height: 500px; /* Ouvre jusqu'à 500px */
+    }
+  }
+}

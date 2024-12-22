@@ -1,4 +1,5 @@
 @import '../components/Accordion/Accordion.scss';
+@import '../components/Accordion/AccordionDetails.scss';
 @import '../components/Banner/Banner.scss';
 @import '../components/Banner/BannerCarousel.scss';
 @import '../components/Footer/Footer.scss';
@@ -6,6 +7,10 @@
 @import '../components/Accordion/Accordion.scss';
 @import '../components/CardGridLayout/CardGridLayout.scss';
 @import '../components/CardDetails/CardDetailsContainer.scss';
+@import '../components/CardDetails/Owner/Owner.scss';
+@import '../components/CardDetails/Rating/Rating.scss';
+@import '../components/CardDetails/Tags/Tags.scss';
+@import '../components/CardDetails/TypeOfFlat/TypeOfFlat.scss';
 @import '../components/Card/Card.scss';
 @import '../pages/About/About.scss';
 @import '../pages/Home/Home.scss';

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header.js"
 import Footer from "./components/Footer/Footer.js"
 import CardDetails from "./pages/CardDetails/CardDetails.js"
 import Error404 from "./pages/Error404/Error404.js";
+import "./styles/Main.scss";
 
 function App() {
   return (

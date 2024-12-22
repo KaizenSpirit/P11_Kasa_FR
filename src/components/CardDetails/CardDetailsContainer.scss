@@ -1,0 +1,72 @@
+.section-details{
+  max-width: 1440px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+
+  .accommodation-container{
+    width: clamp(200px, 90%, 1240px);
+    height: auto; 
+    overflow: visible; 
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infos-accommodation{
+    display: flex;
+    width: 100%;
+  }
+
+  .localisation-and-tags{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 102px;
+    margin-bottom: 25px;
+  }
+ 
+ .owner-and-rating{
+  width: 30%;
+  height: 102px;
+  margin-bottom: 25px;
+  }
+
+ .localisation-and-tags,
+ .owner-and-rating{
+  margin-bottom: 25px;
+  }
+
+.accordion {
+  width: 100%;
+  margin: 0 auto; 
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+  &-content {
+    max-height: 0px;
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out;
+    &.open {
+      max-height: 500px; 
+    }
+  }
+}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

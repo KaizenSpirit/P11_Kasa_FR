@@ -14,7 +14,7 @@ const Accordion = ({ title, content }) => {
       <div className="accordion-header">
         <h3>{title}</h3>
         <span onClick={toggleAccordion} className={`arrow ${isOpen ? "rotated" : ""}`}>
-            <img src="./img/arrow_down.png" alt="Flèche" />
+            <img src={`${process.env.PUBLIC_URL}/img/arrow_down.png`} alt="Flèche" />
         </span>
       </div>
       <div className={`accordion-content ${isOpen ? "open" : ""}`}>
