@@ -3,7 +3,7 @@ import "../../styles/Main.scss";
 const Banner = ({ text, image, pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const picturesArray = pictures || [];
-  const hasPictures = picturesArray.length > 0; 
+  const hasAPictures = picturesArray.length > 0; 
   const hasMultiplePictures = picturesArray.length > 1; 
 
   const handleNext = () => {
@@ -17,14 +17,14 @@ const Banner = ({ text, image, pictures }) => {
   };
 
   return (
-    <div className={`banner ${hasPictures ? "carousel-active" : ""}`}>
+    <div className={`banner ${hasAPictures ? "carousel-active" : ""}`}>
       {text && <h1>{text}</h1>}
       <div className="carousel">
 
         <img
-          src={hasPictures ? pictures[currentIndex] : image} // Carousel ou image unique
+          src={hasAPictures ? pictures[currentIndex] : image} // Carousel ou image unique
           alt={`Slide ${currentIndex + 1}`}
-          className={`carousel-image ${!hasPictures ? "banner-static-image" : ""}`}
+          className={`carousel-image ${!hasAPictures ? "banner-static-image" : ""}`}
         />
     
         {hasMultiplePictures && (

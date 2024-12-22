@@ -1,10 +1,11 @@
 import React from "react";
 import "../../../styles/Main.scss";
 
-const TypeFlat = () => {
+const TypeFlat = ({title,location}) => {
   return (
       <div className="type-of-flat">
-        type of flat component
+          <h2>{title}</h2>
+          <p>{location}</p>
       </div>
   );
 };

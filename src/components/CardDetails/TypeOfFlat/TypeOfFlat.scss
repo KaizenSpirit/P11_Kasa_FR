@@ -1,7 +1,39 @@
+
 .type-of-flat{
   width: 100%;
-  background-color: blue;
   color: white;
-  height: 77px;
-  text-align: center;
+  height: auto;
+  h2 {
+    margin: 0px;
+    color: #FF6060;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 3px;
+  }
+
+  p {
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #000;
+    margin-left: 3px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .type-of-flat {
+    height: auto;
+    h2 {
+      font-size: clamp(18px, 5vw, 20px);
+    }
+  
+    p {
+      font-size: clamp(14px, 2.5vw, 18px); 
+    }
+  }
+  
 }

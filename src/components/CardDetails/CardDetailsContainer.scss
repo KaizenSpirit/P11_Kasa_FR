@@ -55,7 +55,43 @@
     }
   }
 }
+
+.localisation-and-tags{
+  height: auto;
+}
+
+
+
+  
+@media screen and (max-width: 760px) {
+    .infos-accommodation{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .localisation-and-tags{
+      width: 100%;
+    }
+    .type-of-flat{
+      border: 1px solid black;
+      width: 100%;
+    }
+    .owner-and-rating{
+      display: flex;
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    .tags{
+      width: 100%;
+    }
+    .tags-and-rating{
+      display: flex;
+      flex-direction: column-reverse;
+      height: 75%;
+    }
+}
   }
+
 
 
 

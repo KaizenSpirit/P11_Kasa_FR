@@ -14,7 +14,10 @@ const CardDetailsContainer = ({accommodation}) => {
         <div className="accommodation-container">
           <div className="infos-accommodation">
             <div className="localisation-and-tags">
-              <TypeFlat/>
+              <TypeFlat
+                title={accommodation.title}
+                location={accommodation.location}
+              />
               <Tags />
             </div>
             <div className="owner-and-rating">
