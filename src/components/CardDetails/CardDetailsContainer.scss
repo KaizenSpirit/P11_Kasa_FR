@@ -68,18 +68,22 @@
       display: flex;
       flex-direction: column;
     }
+    .accordion{
+      margin-bottom: 10px;
+    }
 
     .localisation-and-tags{
       width: 100%;
     }
     .type-of-flat{
-      border: 1px solid black;
       width: 100%;
     }
     .owner-and-rating{
       display: flex;
       width: 100%;
       flex-direction: row-reverse;
+      height: 60px;
+      margin-top: -20px;
     }
     .tags{
       width: 100%;
@@ -87,7 +91,7 @@
     .tags-and-rating{
       display: flex;
       flex-direction: column-reverse;
-      height: 75%;
+      height: 60%;
     }
 }
   }

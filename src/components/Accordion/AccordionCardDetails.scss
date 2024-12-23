@@ -49,7 +49,7 @@
     }
 
     &-content {
-      max-height: 0px; /* Collapses fermés par défaut */
+      max-height: 0px; 
       overflow: hidden;
       transition: max-height 0.5s ease; 
       background-color: #F6F6F6;
@@ -72,14 +72,17 @@
     }
 
     &.open &-content {
-      max-height: 500px; /* Ouverture fluide */
+      max-height: 500px;
     }
   }
 
   @media screen and (max-width: 760px) {
+
     .accordion-container {
       flex-direction: column; 
       gap: 15px;
+      margin-top: -15px;
+      margin-bottom: -15px;
     }
 
     .accordion {
@@ -100,13 +103,13 @@
     }
 
     .accordion-content {
-      max-height: 0px; /* Hauteur fermée par défaut */
+      max-height: 0px; 
       overflow: hidden;
       transition: max-height 0.5s ease;
     }
 
     .accordion.open .accordion-content {
-      max-height: 500px; /* Ouvre jusqu'à 500px */
+      max-height: 500px; 
     }
   }
 }

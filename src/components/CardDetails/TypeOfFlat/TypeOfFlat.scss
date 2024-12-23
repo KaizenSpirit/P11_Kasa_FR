@@ -27,8 +27,10 @@
 @media screen and (max-width: 760px) {
   .type-of-flat {
     height: auto;
+    margin-top: -25px;
     h2 {
       font-size: clamp(18px, 5vw, 20px);
+      margin-top: 4px;
     }
   
     p {

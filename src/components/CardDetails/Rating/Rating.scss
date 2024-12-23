@@ -1,6 +1,22 @@
-.tags-and-rating{
-  text-align: center;
-  background-color: purple;
-  color: white;
-  height: 25px;
+.rating {
+  margin-top: 15px;
+  gap: 5px; 
+  display: flex;
+  justify-content: flex-end;
+
+  .star {
+    width: 24px;
+    height: 24px; 
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .rating {
+    margin-top: -20px;
+    .star {
+      width: 18px;
+      height: 18px; 
+    }
+  }
 }

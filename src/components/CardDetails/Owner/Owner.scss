@@ -1,8 +1,38 @@
 .host-info{
+  display: flex;
+  flex-direction: row-reverse;
   width: 100%;
-  background-color: black;
-  color: white;
   height: 77px;
-  text-align: center;
   margin: 0px;
+
+  img {
+    border-radius: 50%;
+    height: 64px;
+    margin-top: -10px;
+  }
+
+  p {
+    margin: 7px 40px;
+    font-size: 18px;
+    color: #FF6060;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .host-info {
+    img {
+      height: 40px;
+      margin-top: 10px;
+    }
+  
+    p {
+      margin: 15px 20px;
+      font-size: 12px;
+      width: 30px;
+      font-weight:500;
+    }
+
+  }
+  
 }

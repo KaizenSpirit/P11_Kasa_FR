@@ -18,11 +18,11 @@ const CardDetailsContainer = ({accommodation}) => {
                 title={accommodation.title}
                 location={accommodation.location}
               />
-              <Tags />
+              <Tags tags={accommodation.tags} />
             </div>
             <div className="owner-and-rating">
-              <Owner />
-              <Rating />
+              <Owner host={accommodation.host}/>
+              <Rating rating={accommodation.rating}/>
             </div>
           </div>
           <div className="accordion-container">

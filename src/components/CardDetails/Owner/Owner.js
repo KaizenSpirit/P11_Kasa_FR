@@ -1,10 +1,15 @@
 import React from "react";
 import "../../../styles/Main.scss";
 
-const Owner = () => {
+const Owner = ({host}) => {
   return (
       <div className="host-info">
-        owner component
+        <img
+          src={host.picture}
+          alt={host.name}
+          className="host-picture"
+        />
+        <p>{host.name}</p>
       </div>
   );
 };
