@@ -35,6 +35,10 @@
       &.rotated img {
         transform: rotate(180deg); 
       }
+
+      &:hover{
+        margin-bottom: 5px;
+      }
     }
   }
 
