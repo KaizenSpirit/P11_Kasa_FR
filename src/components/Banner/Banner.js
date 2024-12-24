@@ -32,16 +32,15 @@ const Banner = ({ text, image, pictures }) => {
             <button onClick={handlePrev} className="carousel-btn flèche-précédent">
               <img className="prev-arrow" src="../img/arrow_back_ios-24px 1.png" alt="Précédent" />
             </button>
+            
             <button onClick={handleNext} className="carousel-btn flèche-suivant">
               <img className="forward-arrow" src="../img/arrow_forward_ios-24px 1.png" alt="Suivant" />
             </button>
-          </>
-        )}
-        
-        {hasMultiplePictures && (
-          <div className="carousel-counter">
+
+            <div className="carousel-counter">
             {currentIndex + 1}/{pictures.length}
-          </div>
+            </div>
+          </>
         )}
       </div>
     </div>
