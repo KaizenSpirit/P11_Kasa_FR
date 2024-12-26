@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import CardGridLayout from "../../components/CardGridLayout/CardGridLayout.js"
-import CardDetailsContainer from "../../components/CardDetails/CardDetailsContainer.js"
+import CardDetailsContainer from "../CardDetails/CardDetails.js"
 import Banner from "../../components/Banner/Banner.js"
 import {useLocation} from "react-router-dom";
 const Home = () => {
@@ -24,6 +24,9 @@ const Home = () => {
           text="Chez vous, partout et ailleurs" 
           image="/img/ImageAcceuil.png" 
         />
+
+
+        
         <CardGridLayout onSelectAccommodation={handleSelectAccommodation} />
       </>
     ) : (
