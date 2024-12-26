@@ -1,14 +1,18 @@
-@import '../components/Accordion/Accordion.scss';
-@import '../components/Banner/Banner.scss';
-@import '../components/Footer/Footer.scss';
+@import '../pages/Home/Home.scss';
+@import '../pages/Home/Card/Card.scss';
+@import '../pages/About/About.scss';
+
 @import '../components/Header/Header.scss';
-@import '../components/CardGridLayout/CardGridLayout.scss';
+@import '../components/Footer/Footer.scss';
+
+@import '../components/Banner/Banner.scss';
+@import '../components/Accordion/Accordion.scss';
+
+@import '../pages/CardDetails/CardDetails.scss';
+
+@import '../pages/CardDetails/components/TypeOfFlat/TypeOfFlat.scss';
 @import '../pages/CardDetails/components/Owner/Owner.scss';
 @import '../pages/CardDetails/components/Rating/Rating.scss';
 @import '../pages/CardDetails/components/Tags/Tags.scss';
-@import '../pages/CardDetails/components/TypeOfFlat/TypeOfFlat.scss';
-@import '../components/Card/Card.scss';
-@import '../pages/About/About.scss';
-@import '../pages/Home/Home.scss';
-@import '../pages/CardDetails/CardDetails.scss';
+
 @import '../pages/Error404/Error404.scss';
