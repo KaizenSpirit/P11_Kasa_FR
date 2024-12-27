@@ -21,8 +21,10 @@ const CardDetails = () => {
   return (
     <div className="section-details">
     <Banner pictures={accommodation.pictures}/>
-    <div className="accommodation-container">
-      <div className="infos-accommodation">
+    <section className="accommodation-container">
+    <h1 className="sr-only">Détails de l'hébergement</h1>
+      <header className="infos-accommodation">
+      <h2 className="sr-only">Informations principales</h2>
         <div className="localisation-and-tags">
           <TypeFlat
             title={accommodation.title}
@@ -38,14 +40,15 @@ const CardDetails = () => {
           <Owner host={accommodation.host}/>
           <Rating rating={accommodation.rating}/>
         </div>
-      </div>
-      <div className="accordion-container">
-    <Accordion
+      </header>
+      <section className="accordion-container">
+      <h2 className="sr-only">Détails supplémentaires</h2>
+      <Accordion
       className="description"
       title="Description"
       content={accommodation.description}
-    />
-    <Accordion
+      />
+      <Accordion
       className="Equipements"                       
       title="Équipements"
       content={
@@ -55,9 +58,9 @@ const CardDetails = () => {
           ))}
         </ul>
       }
-    />
-    </div>
-    </div>
+      />
+      </section>
+    </section>
 </div>
   );
 };
