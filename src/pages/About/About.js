@@ -5,7 +5,7 @@ import { aboutAccordionData } from "../../constants/constants.js";
 const About = () => {
   return (
     <div>
-      <Banner text="" image="/img/imageAbout.png"/>
+      <Banner text="" pictures={["/img/imageAbout.png"]}/>
       <div className="collapse-container">
           {aboutAccordionData.map((item, index) => (<Accordion key={index} title={item.title} content={item.content} />))}
       </div>

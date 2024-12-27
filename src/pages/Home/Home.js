@@ -27,7 +27,7 @@ const Home = () => {
       <>
         <Banner 
           text="Chez vous, partout et ailleurs" 
-          image="/img/ImageAcceuil.png" 
+          pictures={["/img/ImageAcceuil.png"]}
         />
 
 

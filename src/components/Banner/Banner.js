@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../../styles/Main.scss";
-const Banner = ({ text, image, pictures = [] }) => {
+const Banner = ({ text, pictures = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isCarrousel = pictures.length > 1;
 
@@ -15,12 +15,12 @@ const Banner = ({ text, image, pictures = [] }) => {
   };
 
   return (
-    <div className={`banner ${isCarrousel ? "carousel-active" : ""}`}>
+    <div className={`banner ${isCarrousel ? "carousel-active" : ""}`} alt={`Slide ${currentIndex + 1}`}>
       {text && <h1>{text}</h1>}
       <div className="carousel">
 
         <img
-          src={isCarrousel || pictures.length === 1 ? pictures[currentIndex] : image} 
+          src={pictures[currentIndex]} 
           alt={`Slide ${currentIndex + 1}`}
           className={`carousel-image ${!isCarrousel ? "banner-static-image" : ""}`}
         />
