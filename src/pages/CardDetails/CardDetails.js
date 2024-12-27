@@ -43,7 +43,7 @@ const CardDetails = () => {
     <Accordion
       className="description"
       title="Description"
-      content={<div className="accommodation-description">{accommodation.description}</div>}
+      content={accommodation.description}
     />
     <Accordion
       className="Equipements"                       
