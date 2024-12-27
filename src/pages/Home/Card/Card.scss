@@ -8,6 +8,15 @@
   border-radius: 10px;
   transition: all .5s ease;
 
+  figure {
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Supprime les marges par défaut de figure */
+    display: flex;
+    flex-direction: column; /* Permet de bien positionner les enfants */
+    position: relative;
+  }
+
   img {
     height: 100%;
     width: 100%; 
@@ -17,10 +26,10 @@
 }
 
 .card:hover{
-   transform: translateY(-10px);
-   box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
-   border: 1px solid black;
-   border-radius: 6px;
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 6px;
 }
 
 

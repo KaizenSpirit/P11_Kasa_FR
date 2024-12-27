@@ -1,12 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/Main.scss";
 
-const Card = ({title, cover}) => {
+const Card = ({ id, title, cover }) => {
   return (
-    <div className="card">
-      <img src={cover} alt={title} className="card-image" />
-      <p className="card-title">{title}</p>
-    </div>
+    <article className="card">
+      <Link to={`/details/${id}`}>
+        <figure>
+          <img src={cover} alt={title} className="card-image" />
+          <figcaption className="card-title">{title}</figcaption>
+        </figure>
+      </Link>
+    </article>
   );
 };
 
