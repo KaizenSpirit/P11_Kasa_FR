@@ -4,7 +4,7 @@ import Banner from'../../components/Banner/Banner.js';
 import Accordion from '../../components/Accordion/Accordion.js';
 import Owner from "./components/Owner/Owner.js";
 import TypeFlat from "./components/TypeOfFlat/TypeOfFlat.js";
-import Tags from "./components/Tags/Tags.js";
+import Tag from "./components/Tags/Tags.js";
 import Rating from "./components/Rating/Rating.js";
 import accommodations from "../../data/accommodationsData.json";
 
@@ -28,7 +28,11 @@ const CardDetails = () => {
             title={accommodation.title}
             location={accommodation.location}
           />
-          <Tags tags={accommodation.tags} />
+        <div className="tags">
+        {accommodation.tags.slice(0, accommodation.tags.length).map((tag, index) => (
+         <Tag key={index} tag={tag} />
+        ))}
+        </div>
         </div>
         <div className="owner-and-rating">
           <Owner host={accommodation.host}/>

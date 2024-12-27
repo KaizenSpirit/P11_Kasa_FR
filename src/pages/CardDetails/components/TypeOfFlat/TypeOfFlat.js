@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../../styles/Main.scss";
 
-const TypeFlat = ({title,location}) => {
+const TypeOfFlat = ({title,location}) => {
   return (
       <div className="type-of-flat">
           <h2>{title}</h2>
@@ -10,4 +10,4 @@ const TypeFlat = ({title,location}) => {
   );
 };
 
-export default TypeFlat;
+export default TypeOfFlat;
