@@ -28,11 +28,11 @@ const CardDetails = () => {
             title={accommodation.title}
             location={accommodation.location}
           />
-        <div className="tags">
-        {accommodation.tags.slice(0, accommodation.tags.length).map((tag, index) => (
-         <Tag key={index} tag={tag} />
-        ))}
-        </div>
+            <div className="tags">
+              {accommodation.tags && accommodation.tags.map((tag, index) => (
+              <Tag key={index} tag={tag} />
+            ))}
+            </div>
         </div>
         <div className="owner-and-rating">
           <Owner host={accommodation.host}/>
