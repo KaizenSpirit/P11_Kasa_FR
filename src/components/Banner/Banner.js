@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import "../../styles/Main.scss";
-const Banner = ({ text, image, pictures }) => {
+const Banner = ({ text, image, pictures = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const picturesArray = pictures || [];
-  const hasAPicture = picturesArray.length > 0; 
-  const hasMultiplePictures = picturesArray.length > 1; 
+  const isCarrousel = pictures.length > 1;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
@@ -17,17 +15,17 @@ const Banner = ({ text, image, pictures }) => {
   };
 
   return (
-    <div className={`banner ${hasAPicture ? "carousel-active" : ""}`}>
+    <div className={`banner ${isCarrousel ? "carousel-active" : ""}`}>
       {text && <h1>{text}</h1>}
       <div className="carousel">
 
         <img
-          src={hasAPicture ? pictures[currentIndex] : image} 
+          src={isCarrousel || pictures.length === 1 ? pictures[currentIndex] : image} 
           alt={`Slide ${currentIndex + 1}`}
-          className={`carousel-image ${!hasAPicture ? "banner-static-image" : ""}`}
+          className={`carousel-image ${!isCarrousel ? "banner-static-image" : ""}`}
         />
     
-        {hasMultiplePictures && (
+        {isCarrousel && (
           <>
             <button onClick={handlePrev} className="carousel-btn flèche-précédent">
               <img className="prev-arrow" src="../img/arrow_back_ios-24px 1.png" alt="Précédent" />
