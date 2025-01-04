@@ -20,7 +20,7 @@ const CardDetails = () => {
 
   return (
     <div className="section-details">
-    <Banner pictures={accommodation.pictures}/>
+    <Banner pictures={accommodation.pictures} isDetailsPage={true}/>
     <section className="accommodation-container">
     <h1 className="sr-only">Détails de l'hébergement</h1>
       <header className="infos-accommodation">

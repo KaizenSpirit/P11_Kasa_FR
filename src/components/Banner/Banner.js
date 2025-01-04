@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../../styles/Main.scss";
-const Banner = ({ text, pictures = [] }) => {
+const Banner = ({ text, pictures = [], isDetailsPage= false }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const isCarrousel = pictures.length > 1;
 
@@ -15,7 +15,7 @@ const Banner = ({ text, pictures = [] }) => {
   };
 
   return (
-    <div className={`banner ${isCarrousel ? "carousel-active" : ""}`} alt={`Slide ${currentIndex + 1}`}>
+    <div className={`banner ${isCarrousel || isDetailsPage ? "carousel-active" : ""}`} alt={`Slide ${currentIndex + 1}`}>
       {text && <h1>{text}</h1>}
       <div className="carousel">
 
