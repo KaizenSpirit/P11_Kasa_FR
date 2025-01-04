@@ -21,9 +21,9 @@ const CardDetails = () => {
   return (
     <div className="section-details">
     <Banner pictures={accommodation.pictures} isDetailsPage={true}/>
-    <section className="accommodation-container">
+    <div className="accommodation-container">
     <h1 className="sr-only">Détails de l'hébergement</h1>
-      <header className="infos-accommodation">
+      <section className="infos-accommodation">
       <h2 className="sr-only">Informations principales</h2>
         <div className="localisation-and-tags">
           <TypeFlat
@@ -40,7 +40,7 @@ const CardDetails = () => {
           <Owner host={accommodation.host}/>
           <Rating rating={accommodation.rating}/>
         </div>
-      </header>
+      </section>
       <section className="accordion-container">
       <h2 className="sr-only">Détails supplémentaires</h2>
       <Accordion
@@ -60,7 +60,7 @@ const CardDetails = () => {
       }
       />
       </section>
-    </section>
+    </div>
 </div>
   );
 };
