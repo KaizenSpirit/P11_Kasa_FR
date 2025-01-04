@@ -1,5 +1,5 @@
 .error-404{
-  font-size: 288px;
+  font-size: clamp(96px, 20vw, 288px); 
   margin: 0px;
   font-weight: 700;
   color: #FF6060;
@@ -7,21 +7,40 @@
 }
 
 .container-error-404{
-  height: 500px;
+  height: auto;
   width: clamp(300px, 90%, 1240px);
-  margin: auto;
+  margin: clamp(10px, 5vw, 40px) auto;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .error-message-404{
-  font-size: 36px;
+  font-size: clamp(18px, 5vw, 36px); 
   font-weight: 500;
   font-family: "Montserrat";
+  color: #FF6060;
+  margin-bottom: 80px;
 }
 
 .link-error-404{
-font-size: 18px;
-color: #000;
-font-weight: 500;
+  font-size: clamp(14px, 3vw, 18px);
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 760px) {
+  .error-404{
+    margin-top: clamp(100px, 5vw, 40px);
+    margin-bottom: clamp(100px, 5vw, 40px);
+  }
+  .error-message-404{
+    width: 300px;
+    margin: 0 auto 120px;
+  }
+
+  .link-error-404{
+    font-size: 20px;
+  }
 }
