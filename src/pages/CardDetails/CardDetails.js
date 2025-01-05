@@ -4,7 +4,7 @@ import Banner from'../../components/Banner/Banner.js';
 import Accordion from '../../components/Accordion/Accordion.js';
 import Owner from "./components/Owner/Owner.js";
 import TypeFlat from "./components/TypeOfFlat/TypeOfFlat.js";
-import Tag from "./components/Tags/Tags.js";
+import Tag from "./components/Tag/Tag.js";
 import Rating from "./components/Rating/Rating.js";
 import accommodations from "../../data/accommodationsData.json";
 
@@ -49,8 +49,8 @@ const CardDetails = () => {
       content={accommodation.description}
       />
       <Accordion
-      className="Equipements"                       
-      title="Équipements"
+      className="equipements"                       
+      title="equipements"
       content={
         <ul>
           {accommodation.equipments.map((equipment, index) => (
