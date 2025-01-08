@@ -74,8 +74,11 @@
     object-fit: contain;
     display: block;
     background-color: #f0f0f0;
-    border-radius: 25px;
-  }
+    border-radius: 25px; 
+}
+
+.banner-static-image{
+  filter: brightness(90%); 
 }
 
 .carousel-btn {
@@ -194,4 +197,5 @@
     border-radius: 10px;
   }
 
+}
 }
