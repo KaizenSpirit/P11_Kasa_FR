@@ -7,7 +7,6 @@ import TypeFlat from "./components/TypeOfFlat/TypeOfFlat.js";
 import Tag from "./components/Tag/Tag.js";
 import Rating from "./components/Rating/Rating.js";
 import accommodations from "../../data/accommodationsData.json";
-
 import Error404 from "../Error404/Error404";
 
 const CardDetails = () => {

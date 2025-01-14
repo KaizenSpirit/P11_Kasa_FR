@@ -4,12 +4,14 @@ import Card from "./Card/Card.js";
 import accommodations from "../../data/accommodationsData.json"; 
 import "../../styles/Main.scss";
 
+const homeBannerImage = "/img/imageAbout.png";
+
 const Home = () => {
   return (
     <div>
       <Banner 
         text="Chez vous, partout et ailleurs" 
-        pictures={["/img/ImageAcceuil.png"]}
+        pictures={[homeBannerImage]}
       />
 
       <div className="card-grid">
