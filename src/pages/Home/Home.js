@@ -4,7 +4,7 @@ import Card from "./Card/Card.js";
 import accommodations from "../../data/accommodationsData.json"; 
 import "../../styles/Main.scss";
 
-const homeBannerImage = "/img/imageAbout.png";
+import homeBannerImage from "../../staticImages/ImageAbout.png"; 
 
 const Home = () => {
   return (
